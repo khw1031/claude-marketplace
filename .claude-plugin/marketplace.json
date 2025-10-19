@@ -1,0 +1,25 @@
+{
+  "name": "claude-marketplace",
+  "owner": {
+    "name": "hynu",
+    "email": "khw1031@gmail.com"
+  },
+  "metadata": {
+    "description": "a personal claude marketplace",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "youtube",
+      "source": "./plugins/youtube",
+      "description": "instruction for summarizing youtube videos",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "summarization",
+      "keywords": ["youtube", "summarization"]
+    }
+  ]
+}
