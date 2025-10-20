@@ -32,6 +32,19 @@
       },
       "category": "study",
       "keywords": ["study"]
+    },
+    {
+      "name": "lyra",
+      "source": "./plugins/lyra",
+      "description": "Lyra - a master-level AI prompt optimization specialist.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Anand Tyagi",
+        "url": "https://github.com/ananddtyagi"
+      },
+      "category": "workflow",
+      "homepage": "https://claudecodecommands.directory/commands/lyra",
+      "keywords": ["workflow"]
     }
   ]
 }
