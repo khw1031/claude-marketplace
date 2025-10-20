@@ -20,6 +20,18 @@
       },
       "category": "summarization",
       "keywords": ["youtube", "summarization"]
+    },
+    {
+      "name": "study",
+      "source": "./plugins/study",
+      "description": "instruction for studying anything",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "study",
+      "keywords": ["study"]
     }
   ]
 }
