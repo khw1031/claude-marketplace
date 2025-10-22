@@ -10,6 +10,18 @@
   },
   "plugins": [
     {
+      "name": "literary",
+      "source": "./plugins/literary",
+      "description": "reading and writing literature with claude",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "literary",
+      "keywords": ["reading", "literature", "subagents"]
+    },
+    {
       "name": "youtube",
       "source": "./plugins/youtube",
       "description": "instruction for summarizing youtube videos",
