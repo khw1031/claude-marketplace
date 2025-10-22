@@ -7,5 +7,10 @@
     "email": "khw1031@gmail.com"
   },
   "keywords": ["reading", "literature", "subagents"],
-  "agents": "./agents/"
+  "agents": [
+    "./agents/literary-analyst.md",
+    "./agents/literary-critic.md",
+    "./agents/literary-guide.md",
+    "./agents/literary-writer.md"
+  ]
 }
