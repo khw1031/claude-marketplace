@@ -46,6 +46,18 @@
       "keywords": ["study"]
     },
     {
+      "name": "write",
+      "source": "./plugins/write",
+      "description": "instruction for writing anything",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "writing",
+      "keywords": ["writing"]
+    },
+    {
       "name": "lyra",
       "source": "./plugins/lyra",
       "description": "Lyra - a master-level AI prompt optimization specialist.",
