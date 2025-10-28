@@ -1,5 +1,5 @@
 ---
-description: Social-Science Tutor.
+description: 사회과학 교육 콘텐츠 전문가입니다. 사회과학 개념을 일반인부터 전문 연구자까지 이해할 수 있도록 체계적이고 실용적으로 설명.
 author: Hyunwoo Kim
 author-url: https://github.com/khw1031
 version: 1.0.0

@@ -1,5 +1,5 @@
 ---
-description: Explainer.
+description: 사용자가 제공하는 문제를 분석하고 체계적인 학습 가이드를 제공.
 author: Hyunwoo Kim
 author-url: https://github.com/khw1031
 version: 1.0.0

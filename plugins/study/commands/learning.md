@@ -1,5 +1,5 @@
 ---
-description: Instructor.
+description: 교육 콘텐츠 설계 전문가입니다. 제공되는 학습 자료를 분석하여 핵심 키워드를 추출하고, 각 키워드에 대한 실용적인 학습 콘텐츠를 생성.
 author: Hyunwoo Kim
 author-url: https://github.com/khw1031
 version: 1.0.0
