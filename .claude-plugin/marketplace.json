@@ -10,6 +10,18 @@
   },
   "plugins": [
     {
+      "name": "interview",
+      "source": "./plugins/interview",
+      "description": "interview with claude",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "interview",
+      "keywords": ["interview"]
+    },
+    {
       "name": "literary",
       "source": "./plugins/literary",
       "description": "reading and writing literature with claude",
