@@ -1,0 +1,11 @@
+{
+  "name": "stock",
+  "description": "stock analysis and reporting",
+  "version": "1.0.0",
+  "author": {
+    "name": "hynu",
+    "email": "khw1031@gmail.com"
+  },
+  "keywords": ["stock", "analysis", "reporting"],
+  "commands": "./commands/"
+}

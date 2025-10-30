@@ -10,6 +10,18 @@
   },
   "plugins": [
     {
+      "name": "idea",
+      "source": "./plugins/idea",
+      "description": "idea generation and evaluation",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "idea",
+      "keywords": ["idea", "generation", "evaluation"]
+    },
+    {
       "name": "interview",
       "source": "./plugins/interview",
       "description": "interview with claude",
@@ -81,6 +93,18 @@
       "category": "workflow",
       "homepage": "https://claudecodecommands.directory/commands/lyra",
       "keywords": ["workflow"]
+    },
+    {
+      "name": "stock",
+      "source": "./plugins/stock",
+      "description": "stock analysis and reporting",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "stock",
+      "keywords": ["stock", "analysis", "reporting"]
     }
   ]
 }
