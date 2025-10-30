@@ -10,6 +10,18 @@
   },
   "plugins": [
     {
+      "name": "analyze",
+      "source": "./plugins/analyze",
+      "description": "analyze with claude",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "analyze",
+      "keywords": ["analyze"]
+    },
+    {
       "name": "idea",
       "source": "./plugins/idea",
       "description": "idea generation and evaluation",
