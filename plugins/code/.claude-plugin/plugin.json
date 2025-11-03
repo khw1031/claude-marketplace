@@ -1,0 +1,11 @@
+{
+  "name": "code",
+  "description": "create, review and improve code",
+  "version": "1.0.0",
+  "author": {
+    "name": "hynu",
+    "email": "khw1031@gmail.com"
+  },
+  "keywords": ["code", "create", "review", "improve"],
+  "commands": "./commands/"
+}

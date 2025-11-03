@@ -22,6 +22,18 @@
       "keywords": ["analyze"]
     },
     {
+      "name": "code",
+      "source": "./plugins/code",
+      "description": "create, review and improve code",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "code",
+      "keywords": ["code", "create", "review", "improve"]
+    },
+    {
       "name": "idea",
       "source": "./plugins/idea",
       "description": "idea generation and evaluation",
