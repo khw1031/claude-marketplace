@@ -1,10 +1,6 @@
 ---
 name: review-react
-description: Expert-level frontend code review specialist for production-grade
-TypeScript/React applications. Use this skill when reviewing pull requests,
-performing code audits, or analyzing frontend codebases for type safety,
-performance, security, and maintainability issues. Focuses on React/TypeScript/MUI
-stack with emphasis on runtime safety and production readiness.
+description: Expert-level frontend code review specialist for production-grade TypeScript/React applications. Use this skill when reviewing pull requests, performing code audits, or analyzing frontend codebases for type safety, performance, security, and maintainability issues. Focuses on React/TypeScript stack with emphasis on runtime safety and production readiness.
 ---
 
 # Frontend Code Review Expert
@@ -43,10 +39,10 @@ stack with emphasis on runtime safety and production readiness.
 
 **Critical 체크리스트**:
 
-- [ ] `any` 타입 사용 여부 → 대안 제시 필수
-- [ ] Non-null assertion (`!`) 남용 → 안전한 체크로 대체
-- [ ] 타입 단언 (`as`) → 타입 가드로 개선
-- [ ] Optional chaining 누락 → 런타임 에러 가능성
+- [ ] any 타입 사용 여부 - 대안 제시 필수
+- [ ] Non-null assertion 연산자 남용 - 안전한 체크로 대체
+- [ ] 타입 단언(as) 남용 - 타입 가드로 개선
+- [ ] Optional chaining 누락 - 런타임 에러 가능성
 - [ ] Enum vs Union Type 선택 적절성
 
 참조: `./references/typescript.md`의 타입 정의 규칙 준수 여부
@@ -56,20 +52,20 @@ stack with emphasis on runtime safety and production readiness.
 **검토 항목**:
 
 - 불필요한 리렌더링 (React DevTools Profiler 추천)
-- 메모이제이션 필요 여부 (`useMemo`, `useCallback`, `React.memo`)
-- Effect 의존성 배열 정확성 → 무한 루프 위험
-- 커스텀 훅 추출 가능성 → 재사용성
+- 메모이제이션 필요 여부 (useMemo, useCallback, React.memo)
+- Effect 의존성 배열 정확성 - 무한 루프 위험
+- 커스텀 훅 추출 가능성 - 재사용성
 - Props drilling vs Context 사용 적절성
 
 ### 4단계: 보안 검증
 
 **필수 체크**:
 
-- [ ] XSS 취약점: `dangerouslySetInnerHTML` 사용 시 sanitization
+- [ ] XSS 취약점: dangerouslySetInnerHTML 사용 시 sanitization
 - [ ] 사용자 입력 검증: Zod/Yup 스키마 적용 여부
 - [ ] 민감 정보 노출: API 키, 토큰 하드코딩 확인
 - [ ] CSRF 방어: 상태 변경 API의 토큰 검증
-- [ ] 안전하지 않은 의존성: `npm audit` 권장
+- [ ] 안전하지 않은 의존성: npm audit 권장
 
 ### 5단계: 성능 및 최적화
 
@@ -110,7 +106,7 @@ stack with emphasis on runtime safety and production readiness.
 
 리뷰 마무리 전 다음을 확인:
 
-- [ ] `./references/typescript.md` 규칙 준수율 산출
+- [ ] typescript.md 규칙 준수율 산출
 - [ ] Critical 이슈가 있다면 Top 3 우선순위 명시
 - [ ] 각 지적사항에 "왜" 문제인지 명확히 설명
 - [ ] 구체적인 코드 예시 제공 (가능한 경우)
