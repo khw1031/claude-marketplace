@@ -22,16 +22,19 @@
       "keywords": ["analyze"]
     },
     {
-      "name": "code",
-      "source": "./plugins/code",
-      "description": "create, review and improve code",
+      "name": "code-skills",
+      "source": "./plugins/code-skills",
+      "description": "code skills with claude",
       "version": "1.0.0",
       "author": {
         "name": "hynu",
         "email": "khw1031@gmail.com"
       },
       "category": "code",
-      "keywords": ["code", "create", "review", "improve"]
+      "keywords": ["code", "create", "review", "improve"],
+      "skills": [
+        "./code-skills/review-react"
+      ]
     },
     {
       "name": "idea",
