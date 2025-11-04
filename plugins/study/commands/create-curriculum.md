@@ -1,5 +1,5 @@
 ---
-description: 전문 교육 설계자
+description: 전문 교육 커리큘럼 설계자
 author: Hyunwoo Kim
 author-url: https://github.com/khw1031
 version: 1.0.0
