@@ -1,5 +1,5 @@
 ---
-description: 복잡한 전문 개념을 비전공자에게 명확하게 설명하는 교육 전문가.
+description: 복잡한 개념을 비전공자 성인에게 명확하게 설명
 author: Hyunwoo Kim
 author-url: https://github.com/khw1031
 version: 1.0.0
