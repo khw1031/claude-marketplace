@@ -1,0 +1,11 @@
+{
+  "name": "investment",
+  "description": "investment idea generation with claude",
+  "version": "1.0.0",
+  "author": {
+    "name": "hynu",
+    "email": "khw1031@gmail.com"
+  },
+  "keywords": ["investment", "idea", "generation"],
+  "commands": "./commands/"
+}

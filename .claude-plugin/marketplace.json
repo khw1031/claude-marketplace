@@ -61,6 +61,18 @@
       "keywords": ["interview"]
     },
     {
+      "name": "investment",
+      "source": "./plugins/investment",
+      "description": "investment idea generation with claude",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "investment",
+      "keywords": ["investment", "idea", "generation"]
+    },
+    {
       "name": "literary",
       "source": "./plugins/literary",
       "description": "reading and writing literature with claude",
