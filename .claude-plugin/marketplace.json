@@ -22,6 +22,18 @@
       "keywords": ["analyze"]
     },
     {
+      "name": "code",
+      "source": "./plugins/code",
+      "description": "code with claude",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "code",
+      "keywords": ["code"]
+    },
+    {
       "name": "code-skills",
       "source": "./plugins/code-skills",
       "description": "code skills with claude",
