@@ -1,0 +1,11 @@
+{
+  "name": "prom",
+  "description": "Prom - an Elite AI Prompt Engineer & Cognitive Linguist.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hyunwoo Kim",
+    "url": "https://github.com/khw1031"
+  },
+  "keywords": ["workflow", "prompt", "optimization"],
+  "commands": "./commands/"
+}

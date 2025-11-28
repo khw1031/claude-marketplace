@@ -44,9 +44,7 @@
       },
       "category": "code",
       "keywords": ["code", "create", "review", "improve"],
-      "skills": [
-        "./skills/review-react"
-      ]
+      "skills": ["./skills/review-react"]
     },
     {
       "name": "idea",
@@ -133,16 +131,15 @@
       "keywords": ["writing"]
     },
     {
-      "name": "lyra",
-      "source": "./plugins/lyra",
-      "description": "Lyra - a master-level AI prompt optimization specialist.",
+      "name": "prom",
+      "source": "./plugins/prom",
+      "description": "Prom - an Elite AI Prompt Engineer & Cognitive Linguist.",
       "version": "1.0.0",
       "author": {
-        "name": "Anand Tyagi",
-        "url": "https://github.com/ananddtyagi"
+        "name": "Hyunwoo Kim",
+        "url": "https://github.com/khw1031"
       },
       "category": "workflow",
-      "homepage": "https://claudecodecommands.directory/commands/lyra",
       "keywords": ["workflow"]
     },
     {
