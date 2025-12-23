@@ -1,0 +1,25 @@
+{
+  "name": "hynu-plugins",
+  "owner": {
+    "name": "hynu",
+    "email": "khw1031@gmail.com"
+  },
+  "metadata": {
+    "description": "a personal claude plugins",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "decision-tools",
+      "source": "./plugins/decision-tools",
+      "description": "decision tools",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "decision",
+      "keywords": ["decision"]
+    }
+  ]
+}

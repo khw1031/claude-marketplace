@@ -1,0 +1,4 @@
+{
+  "files": ["**/*.md", "**/*.mdx"],
+  "printWidth": 100
+}

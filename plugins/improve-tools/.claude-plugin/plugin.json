@@ -1,0 +1,11 @@
+{
+  "name": "improve-tools",
+  "description": "Development tools for optimizing Claude Code plugins and prompts",
+  "version": "1.0.0",
+  "author": {
+    "name": "hynu",
+    "email": "khw1031@gmail.com"
+  },
+  "keywords": ["plugin", "prompt", "optimization", "improvement", "development", "tools", "metadata"],
+  "commands": "./commands/"
+}

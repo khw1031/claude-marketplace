@@ -1,0 +1,11 @@
+{
+  "name": "freelancer-go-not-go",
+  "description": "Evaluate freelance project ideas and opportunities",
+  "version": "1.0.0",
+  "author": {
+    "name": "hynu",
+    "email": "khw1031@gmail.com"
+  },
+  "keywords": ["idea", "generation", "evaluation"],
+  "commands": "./commands/"
+}
