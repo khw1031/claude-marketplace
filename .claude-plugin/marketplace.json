@@ -20,6 +20,18 @@
       },
       "category": "decision",
       "keywords": ["decision"]
+    },
+    {
+      "name": "improve-tools",
+      "source": "./plugins/improve-tools",
+      "description": "Development tools for optimizing Claude Code plugins and prompts",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "development",
+      "keywords": ["plugin", "prompt", "optimization", "improvement", "development", "tools", "metadata"]
     }
   ]
 }
