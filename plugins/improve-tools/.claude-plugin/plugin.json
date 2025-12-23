@@ -6,6 +6,6 @@
     "name": "hynu",
     "email": "khw1031@gmail.com"
   },
-  "keywords": ["plugin", "prompt", "optimization", "improvement", "development", "tools", "metadata"],
+  "keywords": ["plugin", "prompt", "optimization", "metadata", "development"],
   "commands": "./commands/"
 }
