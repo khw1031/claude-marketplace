@@ -1,11 +1,11 @@
 {
   "name": "decision-tools",
-  "description": "Evaluate freelance project ideas and opportunities",
+  "description": "Evaluate project viability and business ideas for freelancers and indie hackers",
   "version": "1.0.0",
   "author": {
     "name": "hynu",
     "email": "khw1031@gmail.com"
   },
-  "keywords": ["freelance", "project", "evaluation", "analysis", "viability"],
+  "keywords": ["decision", "freelance", "indie-hacker", "project", "business", "evaluation", "viability"],
   "commands": "./commands/"
 }
