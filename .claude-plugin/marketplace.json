@@ -12,14 +12,14 @@
     {
       "name": "decision-tools",
       "source": "./plugins/decision-tools",
-      "description": "decision tools",
-      "version": "1.0.0",
+      "description": "Evaluate project viability and business ideas for freelancers and indie hackers",
+      "version": "1.0.1",
       "author": {
         "name": "hynu",
         "email": "khw1031@gmail.com"
       },
       "category": "decision",
-      "keywords": ["decision"]
+      "keywords": ["decision", "freelance", "indie-hacker", "project", "business", "evaluation", "viability"]
     },
     {
       "name": "improve-tools",
@@ -32,6 +32,30 @@
       },
       "category": "development",
       "keywords": ["plugin", "prompt", "optimization", "improvement", "development", "tools", "metadata"]
+    },
+    {
+      "name": "transition-tools",
+      "source": "./plugins/transition-tools",
+      "description": "Transform documents into actionable plans and extract key insights",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "productivity",
+      "keywords": ["prd", "mvp", "planning", "summary", "insight", "analysis", "content"]
+    },
+    {
+      "name": "simulator-tools",
+      "source": "./plugins/simulator-tools",
+      "description": "Simulate multi-expert analysis for any topic or question",
+      "version": "1.0.0",
+      "author": {
+        "name": "hynu",
+        "email": "khw1031@gmail.com"
+      },
+      "category": "analysis",
+      "keywords": ["simulation", "expert", "analysis", "multi-perspective", "insight"]
     }
   ]
 }
