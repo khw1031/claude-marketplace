@@ -1,0 +1,11 @@
+{
+  "name": "init-tools",
+  "description": "Initialize production-ready frontend projects with modern tooling",
+  "version": "1.0.0",
+  "author": {
+    "name": "hynu",
+    "email": "khw1031@gmail.com"
+  },
+  "keywords": ["nextjs", "frontend", "initialization", "setup", "scaffold", "typescript", "tailwind"],
+  "commands": "./commands/"
+}
