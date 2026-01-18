@@ -1,21 +1,26 @@
 {
   "name": "init-tools",
-  "description": "Initialize production-ready frontend projects with modern tooling using intelligent skills",
-  "version": "2.0.0",
+  "description": "Initialize production-ready projects (Next.js, NestJS, Vite+React) with modern tooling and best practices",
+  "version": "3.0.0",
   "author": {
     "name": "hynu",
     "email": "khw1031@gmail.com"
   },
   "keywords": [
     "nextjs",
+    "nestjs",
+    "vite",
+    "react",
     "frontend",
+    "backend",
     "initialization",
     "setup",
     "scaffold",
     "typescript",
     "tailwind",
     "skills",
-    "architecture"
+    "architecture",
+    "commands"
   ],
   "skills": "./skills/"
 }

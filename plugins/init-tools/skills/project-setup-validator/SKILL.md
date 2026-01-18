@@ -15,9 +15,36 @@ description: "프로젝트 초기화 완료 후 설정을 검증하고 체크리
 
 ## 검증 프로세스
 
+### 0. 프레임워크 자동 감지
+
+먼저 프로젝트의 프레임워크를 감지합니다:
+
+```bash
+# package.json에서 프레임워크 확인
+if grep -q '"next"' package.json; then
+  echo "Framework: Next.js"
+  FRAMEWORK="nextjs"
+elif grep -q '"@nestjs/core"' package.json; then
+  echo "Framework: NestJS"
+  FRAMEWORK="nestjs"
+elif grep -q '"vite"' package.json && grep -q '"react"' package.json; then
+  echo "Framework: Vite + React"
+  FRAMEWORK="vite-react"
+else
+  echo "Unknown framework"
+  FRAMEWORK="unknown"
+fi
+```
+
+이후 검증은 감지된 프레임워크에 따라 분기됩니다.
+
+---
+
 ### 1. 파일 구조 검증
 
-다음 파일과 디렉토리가 존재하는지 확인:
+프레임워크별로 다른 파일과 디렉토리를 확인:
+
+#### Next.js 프로젝트
 
 ```bash
 # 필수 파일
@@ -49,27 +76,113 @@ ls -la vitest.setup.ts
 ls -la biome.json  # 또는 .eslintrc + .prettierrc
 ```
 
-### 2. 패키지 검증
-
-`package.json` 확인:
+#### NestJS 프로젝트
 
 ```bash
-# 필수 의존성 확인
+# 필수 파일
+ls -la package.json
+ls -la nest-cli.json
+ls -la tsconfig.json
+ls -la .nvmrc  # 또는 .node-version
+ls -la CLAUDE.md
+
+# 필수 디렉토리
+ls -d src/main.ts
+ls -d src/app.module.ts
+ls -d src/modules
+ls -d src/shared/{decorators,filters,interceptors,pipes,guards,utils,types}
+ls -d src/config
+
+# 설정 파일
+ls -la biome.json  # 또는 .eslintrc + .prettierrc
+ls -la .env.example
+```
+
+#### Vite + React 프로젝트
+
+```bash
+# 필수 파일
+ls -la package.json
+ls -la vite.config.ts
+ls -la tsconfig.json
+ls -la tailwind.config.ts
+ls -la .nvmrc  # 또는 .node-version
+ls -la CLAUDE.md
+
+# 필수 디렉토리
+ls -d src/main.tsx
+ls -d src/features
+ls -d src/shared/components/ui
+ls -d src/shared/components/design-system
+ls -d src/shared/styles
+
+# 테마 파일
+ls -la src/shared/styles/theme.ts
+ls -la src/shared/styles/variants.ts
+
+# 설정 파일
+ls -la vitest.config.ts
+ls -la vitest.setup.ts
+ls -la biome.json  # 또는 .eslintrc + .prettierrc
+```
+
+### 2. 패키지 검증
+
+프레임워크별 필수 패키지 확인:
+
+#### Next.js
+
+```bash
+# 필수 의존성
 cat package.json | grep -E "next|react|typescript|tailwindcss|zod"
 
-# 개발 의존성 확인
+# 개발 의존성
 cat package.json | grep -E "vitest|@testing-library|@biomejs/biome"
 
-# shadcn/ui 관련 확인
+# shadcn/ui 관련
 cat package.json | grep -E "class-variance-authority|clsx|tailwind-merge"
 
-# engines 필드 확인
+# engines 필드
+cat package.json | grep -A 3 "engines"
+```
+
+#### NestJS
+
+```bash
+# 필수 의존성
+cat package.json | grep -E "@nestjs/core|@nestjs/common|typescript|class-validator|class-transformer"
+
+# 개발 의존성
+cat package.json | grep -E "jest|@nestjs/testing|@biomejs/biome"
+
+# ORM 확인 (TypeORM, Prisma, Mongoose 중 하나)
+cat package.json | grep -E "typeorm|prisma|mongoose"
+
+# engines 필드
+cat package.json | grep -A 3 "engines"
+```
+
+#### Vite + React
+
+```bash
+# 필수 의존성
+cat package.json | grep -E "vite|react|react-dom|typescript|tailwindcss"
+
+# 개발 의존성
+cat package.json | grep -E "vitest|@testing-library|@biomejs/biome"
+
+# shadcn/ui 관련 (사용하는 경우)
+cat package.json | grep -E "class-variance-authority|clsx|tailwind-merge"
+
+# engines 필드
 cat package.json | grep -A 3 "engines"
 ```
 
 ### 3. 스크립트 검증
 
-`package.json`에 필수 스크립트가 있는지 확인:
+프레임워크별 필수 스크립트 확인:
+
+#### Next.js / Vite+React
 
 **필수 스크립트:**
 - ✅ `dev`: 개발 서버 실행
@@ -78,7 +191,17 @@ cat package.json | grep -A 3 "engines"
 - ✅ `format` / `format:check`: 코드 포맷팅
 - ✅ `test`: 테스트 실행
 - ✅ `test:run`: 단일 테스트 실행
-- ✅ `test:coverage`: 커버리지 포함 테스트
+
+#### NestJS
+
+**필수 스크립트:**
+- ✅ `start:dev`: 개발 서버 실행 (watch 모드)
+- ✅ `start:prod`: 프로덕션 실행
+- ✅ `build`: 프로덕션 빌드
+- ✅ `lint`: 코드 린팅
+- ✅ `format` / `format:check`: 코드 포맷팅
+- ✅ `test`: 단위 테스트 실행
+- ✅ `test:e2e`: E2E 테스트 실행
 
 ### 4. 설정 파일 검증
 

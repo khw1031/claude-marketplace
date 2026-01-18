@@ -280,7 +280,29 @@ afterEach(() => {
 
 #### 7. CLAUDE.md 생성
 
-프로젝트 루트에 `CLAUDE.md` 생성 (nextjs-setup-guide skill의 템플릿 사용)
+**commands/claude-md-generator 사용**:
+
+```markdown
+CLAUDE.md를 생성하는 중...
+
+이 단계에서는 `claude-md-generator` command를 실행합니다:
+
+1. 프로젝트 규칙 추출 (`rules-extractor` 자동 호출)
+2. Next.js 템플릿 적용
+3. 프로젝트 루트에 CLAUDE.md 생성
+
+실행 방법:
+- commands/claude-md-generator/command.md의 지침 따름
+- framework: 'nextjs'
+- projectPath: 현재 프로젝트 경로
+```
+
+**실행 흐름**:
+
+1. `commands/rules-extractor/command.md` 읽기
+2. 규칙 추출 프로세스 실행 (bash 명령어들)
+3. `commands/claude-md-generator/command.md` 읽기
+4. 템플릿 렌더링 및 CLAUDE.md 생성
 
 ### Phase 5: 검증
 
