@@ -1,11 +1,11 @@
 {
   "name": "transition-tools",
-  "description": "Transform documents into actionable plans and extract key insights",
-  "version": "1.0.0",
+  "description": "Transform PRDs into MVP plans, parallel development TODOs, and extract key insights",
+  "version": "1.1.0",
   "author": {
     "name": "hynu",
     "email": "khw1031@gmail.com"
   },
-  "keywords": ["prd", "mvp", "planning", "summary", "insight", "analysis", "content"],
+  "keywords": ["prd", "mvp", "planning", "parallel", "todo", "dependency", "summary", "insight"],
   "commands": "./commands/"
 }

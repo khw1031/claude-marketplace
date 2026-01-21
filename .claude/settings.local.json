@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "WebSearch",
-      "mcp__acp__Bash"
+      "mcp__acp__Bash",
+      "mcp__acp__Write",
+      "Skill(improve-tools:improve-plugin-metadata)",
+      "Skill(improve-tools:improve-plugin-metadata:*)",
+      "mcp__acp__Edit"
     ],
     "deny": [],
     "ask": []
